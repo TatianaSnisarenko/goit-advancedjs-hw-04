@@ -8,7 +8,8 @@ export function renderImages(images) {
     );
     return;
   }
-  gallery.innerHTML = createGalleryMarkup(images);
+  // gallery.innerHTML = createGalleryMarkup(images);
+  gallery.insertAdjacentHTML('beforeend', createGalleryMarkup(images));
 }
 
 const createGalleryMarkup = images =>

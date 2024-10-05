@@ -10,10 +10,6 @@
   margin-top: 60px;
 }
 
-.gallery-main {
-  margin-top: 60px;
-}
-
 .gallery-item {
   flex-basis: calc((100% - 24px * 2) / 3);
   border: 1px solid #808080;
@@ -37,7 +33,6 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  /* width: 100%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,5 +66,22 @@
   color: #2e2f42;
   font-size: 12px;
   line-height: 2;
+  letter-spacing: 0.04em;
+}
+
+.more-btn {
+  display: block;
+  margin: 20px auto;
+}
+
+.end-of-search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.end-of-search {
+  color: #2e2f42;
+  font-weight: 600;
   letter-spacing: 0.04em;
 }

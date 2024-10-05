@@ -17,6 +17,7 @@
   "author": "Tetiana Snisarenko <tatiana.snisarenko.p@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.7.7",
     "css-loader": "^7.1.2",
     "dotenv": "^16.4.5",
     "izitoast": "^1.4.0",

@@ -17,3 +17,11 @@
   letter-spacing: 0.04em;
   padding: 8px 16px;
 }
+
+.search-input:hover {
+  border: 1px solid #000;
+}
+
+.search-input:focus {
+  border: 1px solid #4e75ff;
+}
