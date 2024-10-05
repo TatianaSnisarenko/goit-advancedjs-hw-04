@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-advancedjs-hw-03</title>
+    <title>goit-advancedjs-hw-04</title>
     <script type="module" crossorigin src="/goit-advancedjs-hw-04/index.js"></script>
-    <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-04/assets/vendor-BrddEoy-.js">
+    <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-04/assets/vendor-CJCXbx8_.js">
     <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-04/assets/vendor-CWKLx11g.css">
-    <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-04/assets/index-Bn_mWKpc.css">
+    <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-04/assets/index-D0jUsh9L.css">
   </head>
   <body>
     <main>
@@ -22,12 +22,17 @@
             placeholder="Search images..."
           />
         </label>
-        <button type="submit">Search</button>
+        <button class="search-btn" type="submit">Search</button>
       </form>
 
-      <div class="loader is-hidden"></div>
-
       <ul class="gallery"></ul>
+      <button type="button" class="more-btn is-hidden">Load more</button>
+      <div class="loader is-hidden"></div>
+      <div class="end-of-search-container is-hidden">
+        <p class="end-of-search">
+          We're sorry, but you've reached the end of search results.
+        </p>
+      </div>
     </main>
   </body>
 </html>
