@@ -1,3 +1,6 @@
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
+
 import { gallery, form, loader, moreBtn, endOfSearch } from './constants';
 import { fetchImages, prepareQuery, PER_PAGE } from './pixabay-api';
 import { renderImages } from './render-functions';
@@ -72,3 +75,11 @@ function configureScroll() {
     behavior: 'smooth',
   });
 }
+
+const galleryLightbox = new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
+  captionDelay: 250,
+});
+galleryLightbox.on('show.simplelightbox', function () {});
+
+galleryLightbox.on('close.simplelightbox', function () {});
