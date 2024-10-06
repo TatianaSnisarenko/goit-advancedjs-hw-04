@@ -26,7 +26,9 @@ export function handleSearchSubmit(event) {
     .then(data => {
       updateGallery(data);
       form.reset();
-      moreBtn.classList.remove('is-hidden');
+      if (!(data.hits.length === 0)) {
+        moreBtn.classList.remove('is-hidden');
+      }
     })
     .catch(error => handleError());
   form.reset();

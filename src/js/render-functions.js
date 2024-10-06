@@ -8,7 +8,6 @@ export function renderImages(images) {
     );
     return;
   }
-  // gallery.innerHTML = createGalleryMarkup(images);
   gallery.insertAdjacentHTML('beforeend', createGalleryMarkup(images));
 }
 
